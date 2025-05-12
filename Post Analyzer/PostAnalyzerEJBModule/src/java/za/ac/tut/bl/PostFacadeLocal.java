@@ -27,6 +27,8 @@ public interface PostFacadeLocal {
     List<Post> findAll();
 
     List<Post> findRange(int[] range);
+    
+    void analyze(Post post);
 
     int count();
     
