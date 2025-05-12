@@ -1,4 +1,4 @@
-package za.ac.tut.ai;
+package org.ac.tut.ai;
 
 import dev.langchain4j.data.message.UserMessage;
 import dev.langchain4j.model.chat.ChatModel;
