@@ -20,19 +20,28 @@ public class Post implements Serializable {
     private Long id;
     private Long userid;
     private String content;
-    private Double engagementScore;
+    private Double predicatedScore;
+    private Double actualScore;
 
     public Post() {
     }
 
-    public Post(Long id, Long userid, String content, Double engagementScore) {
+    public Post(Long id, Long userid, String content, Double predicatedScore, Double actualScore) {
         this.id = id;
         this.userid = userid;
         this.content = content;
-        this.engagementScore = engagementScore;
+        this.predicatedScore = predicatedScore;
+        this.actualScore = actualScore;
     }
-    
-    //Getters and Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Long getUserid() {
         return userid;
     }
@@ -49,21 +58,23 @@ public class Post implements Serializable {
         this.content = content;
     }
 
-    public Double getEngagementScore() {
-        return engagementScore;
+    public Double getPredicatedScore() {
+        return predicatedScore;
     }
 
-    public void setEngagementScore(Double engagementScore) {
-        this.engagementScore = engagementScore;
-    }
-    
-    public Long getId() {
-        return id;
+    public void setPredicatedScore(Double predicatedScore) {
+        this.predicatedScore = predicatedScore;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Double getActualScore() {
+        return actualScore;
     }
+
+    public void setActualScore(Double actualScore) {
+        this.actualScore = actualScore;
+    }
+
+ 
 
     @Override
     public int hashCode() {
