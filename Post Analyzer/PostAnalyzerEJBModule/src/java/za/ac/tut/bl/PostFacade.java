@@ -66,8 +66,7 @@ public class PostFacade extends AbstractFacade<Post> implements PostFacadeLocal 
         sb.append("</prompt>\n");
 
         String prompt = sb.toString();
-        String result = AI.chat(prompt);
-        System.out.println(result);
+        return result = AI.chat(prompt);
     }
 
     private String indent(int i) {
